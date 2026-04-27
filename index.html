@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DTC Flowcharts — Index</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --surface: #1a1d27;
+    --surface2: #242836;
+    --border: #2e3348;
+    --text: #e2e4ec;
+    --text-dim: #8b8fa3;
+    --accent: #4f8ff7;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    padding: 48px 24px;
+  }
+  .container { max-width: 1100px; margin: 0 auto; }
+  h1 { font-size: 24px; font-weight: 700; margin-bottom: 4px; }
+  h1 span { color: var(--accent); }
+  .sub { color: var(--text-dim); font-size: 14px; margin-bottom: 32px; }
+  .count { color: var(--text-dim); font-size: 13px; margin-bottom: 12px; }
+  table { width: 100%; border-collapse: collapse; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+  th {
+    background: var(--surface2);
+    padding: 12px 16px;
+    text-align: left;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-dim);
+    border-bottom: 1px solid var(--border);
+  }
+  td {
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--border);
+    font-size: 14px;
+  }
+  tbody tr { cursor: pointer; transition: background 0.12s; }
+  tbody tr:hover { background: var(--surface2); }
+  tbody tr:last-child td { border-bottom: none; }
+  .dtc { font-family: 'Consolas', 'Courier New', monospace; color: var(--accent); font-weight: 700; font-size: 13px; background: rgba(79,143,247,0.1); padding: 3px 8px; border-radius: 4px; }
+  .title { color: var(--text-dim); font-size: 13px; }
+  .muted { color: var(--text-dim); font-size: 12px; white-space: nowrap; }
+  a.open { color: var(--accent); text-decoration: none; font-size: 13px; font-weight: 600; }
+  a.open:hover { text-decoration: underline; }
+  .empty { text-align: center; padding: 60px 20px; color: var(--text-dim); }
+  @media (max-width: 600px) {
+    body { padding: 24px 12px; }
+    .title, th.title { display: none; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1><span>DTC</span> Flowcharts</h1>
+  <div class="sub">Interactive diagnostic flowcharts — click to open in a new tab.</div>
+  <div class="count">1 flowchart published</div>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>DTC</th>
+        <th>Vehicle</th>
+        <th class="title">Description</th>
+        <th>Shared</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr onclick="location.href='P0420_2018_Jeep_Grand_Cherokee_Laredo.html'">
+        <td><span class="dtc">P0420</span></td>
+        <td>2018 Jeep Grand Cherokee Laredo 3.6L V6 Pentastar</td>
+        <td class="title">P0420 - Catalyst System Efficiency Below Threshold (Bank 1)</td>
+        <td class="muted">Apr 23, 2026</td>
+        <td><a class="open" href="P0420_2018_Jeep_Grand_Cherokee_Laredo.html">Open →</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
